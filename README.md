@@ -10,15 +10,17 @@ Remote control for your app features. Toggle on/off dynamically without redeploy
 
 ## Setup & Run (2 minutes)
 
-**Extract and run (if you have the zip file):**
-```bash
-unzip feature-flag-system.zip && cd feature-flag-system && mvn clean package
-```
-
 **Requirements:**
 - Java 17+
 - Maven 3.6+
 - MySQL 8.0 (local or Docker)
+
+
+**Clone and run from GitHub:**
+```bash
+git clone <repo> && cd feature-flag-system && mvn clean package
+```
+
 
 
 
@@ -43,11 +45,6 @@ java -jar target/feature-flags-1.0.0.jar \
   --spring.datasource.url=jdbc:mysql://localhost:3306/feature_flags?useSSL=false&serverTimezone=UTC \
   --spring.datasource.username=root \
   --spring.datasource.password=mypassword
-```
-
-**Or clone from Git:**
-```bash
-git clone <repo> && cd feature-flag-system && mvn clean package && java -jar target/feature-flags-1.0.0.jar
 ```
 
 ✅ **App runs on** `http://localhost:8080`  
