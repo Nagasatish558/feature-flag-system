@@ -1,0 +1,713 @@
+2026-02-16 08:57:55 [main] INFO  c.f.c.OverrideControllerTest - Starting OverrideControllerTest using Java 17.0.16 with PID 74301 (started by nag in /Users/nag/Desktop/Everest/feature-flag-system)
+2026-02-16 08:57:55 [main] DEBUG c.f.c.OverrideControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-02-16 08:57:55 [main] INFO  c.f.c.OverrideControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-16 08:57:56 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-02-16 08:57:57 [main] INFO  c.f.c.OverrideControllerTest - Started OverrideControllerTest in 2.171 seconds (process running for 3.057)
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/groups/999/admin - Deleting group override
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Override not found: Group override not found
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/users - Creating user override
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/groups - Creating group override
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.featureflag.controller.OverrideController.createUserOverride(com.featureflag.dto.CreateUserOverrideRequest): [Field error in object 'createUserOverrideRequest' on field 'userId': rejected value [null]; codes [NotBlank.createUserOverrideRequest.userId,NotBlank.userId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserOverrideRequest.userId,userId]; arguments []; default message [userId]]; default message [User ID is required]] 
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/users/1/alice - Deleting user override
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/users - Creating user override
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Duplicate override: User override already exists for this feature
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/users - Creating user override
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/groups - Creating group override
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.featureflag.controller.OverrideController.createUserOverride(com.featureflag.dto.CreateUserOverrideRequest): [Field error in object 'createUserOverrideRequest' on field 'featureId': rejected value [null]; codes [NotNull.createUserOverrideRequest.featureId,NotNull.featureId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserOverrideRequest.featureId,featureId]; arguments []; default message [featureId]]; default message [Feature ID is required]] 
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/groups - Creating group override
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Duplicate override: Group override already exists for this feature
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/users/999/alice - Deleting user override
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Override not found: User override not found
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.featureflag.controller.OverrideController.createGroupOverride(com.featureflag.dto.CreateGroupOverrideRequest): [Field error in object 'createGroupOverrideRequest' on field 'groupId': rejected value [null]; codes [NotBlank.createGroupOverrideRequest.groupId,NotBlank.groupId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createGroupOverrideRequest.groupId,groupId]; arguments []; default message [groupId]]; default message [Group ID is required]] 
+2026-02-16 08:57:57 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/groups/1/admin - Deleting group override
+2026-02-16 08:57:57 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.featureflag.controller.FeatureEvaluationControllerTest]: FeatureEvaluationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-16 08:57:57 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.featureflag.FeatureFlagApplication for test class com.featureflag.controller.FeatureEvaluationControllerTest
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationControllerTest - Starting FeatureEvaluationControllerTest using Java 17.0.16 with PID 74301 (started by nag in /Users/nag/Desktop/Everest/feature-flag-system)
+2026-02-16 08:57:57 [main] DEBUG c.f.c.FeatureEvaluationControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-16 08:57:57 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:57 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:57 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationControllerTest - Started FeatureEvaluationControllerTest in 0.26 seconds (process running for 3.815)
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/non-existent/alice - Evaluating feature for user
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/premium-feature/charlie - Evaluating feature for user
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/beta-feature/dave - Evaluating feature for user
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/dark-mode/alice - Evaluating feature for user
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/default/non-existent - Getting default state
+2026-02-16 08:57:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/default/test-feature - Getting default state
+2026-02-16 08:57:57 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.featureflag.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-16 08:57:57 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.featureflag.FeatureFlagApplication for test class com.featureflag.controller.FeatureFlagControllerTest
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureFlagControllerTest - Starting FeatureFlagControllerTest using Java 17.0.16 with PID 74301 (started by nag in /Users/nag/Desktop/Everest/feature-flag-system)
+2026-02-16 08:57:57 [main] DEBUG c.f.c.FeatureFlagControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-02-16 08:57:57 [main] INFO  c.f.c.FeatureFlagControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-16 08:57:58 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.c.FeatureFlagControllerTest - Started FeatureFlagControllerTest in 0.219 seconds (process running for 4.116)
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - POST /api/v1/flags - Creating feature flag: new-feature
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/999 - Fetching feature flag
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/key/test-feature - Fetching feature flag by key
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - DELETE /api/v1/flags/1 - Deleting feature flag
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/key/non-existent - Fetching feature flag by key
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - DELETE /api/v1/flags/999 - Deleting feature flag
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/1 - Fetching feature flag
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - PUT /api/v1/flags/999 - Updating feature flag
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 08:57:58 [main] INFO  c.f.controller.FeatureFlagController - PUT /api/v1/flags/1 - Updating feature flag
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.featureflag.dto.FeatureFlagDTO> com.featureflag.controller.FeatureFlagController.createFlag(com.featureflag.dto.CreateFeatureFlagRequest): [Field error in object 'createFeatureFlagRequest' on field 'featureKey': rejected value [null]; codes [NotBlank.createFeatureFlagRequest.featureKey,NotBlank.featureKey,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createFeatureFlagRequest.featureKey,featureKey]; arguments []; default message [featureKey]]; default message [Feature key is required]] 
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.featureflag.dto.UserGroupDTO> com.featureflag.controller.UserGroupController.createUserGroup(com.featureflag.dto.CreateUserGroupRequest): [Field error in object 'createUserGroupRequest' on field 'groupId': rejected value [null]; codes [NotBlank.createUserGroupRequest.groupId,NotBlank.groupId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserGroupRequest.groupId,groupId]; arguments []; default message [groupId]]; default message [Group ID is required]] ]
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/user123 - Fetching groups for user
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/group/admin - Fetching users in group
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user-not-found/admin - Removing user from group
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups - Fetching all user groups
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - POST /api/v1/user-groups - Creating user group: userId=user123, groupId=admin
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - POST /api/v1/user-groups - Creating user group: userId=user1, groupId=admin
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - POST /api/v1/user-groups - Creating user group: userId=user2, groupId=users
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/user123 - Fetching groups for user
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.featureflag.dto.UserGroupDTO> com.featureflag.controller.UserGroupController.createUserGroup(com.featureflag.dto.CreateUserGroupRequest): [Field error in object 'createUserGroupRequest' on field 'userId': rejected value [null]; codes [NotBlank.createUserGroupRequest.userId,NotBlank.userId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserGroupRequest.userId,userId]; arguments []; default message [userId]]; default message [User ID is required]] ]
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/user@example.com - Fetching groups for user
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user123/admin - Removing user from group
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/orphan-user - Fetching groups for user
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/group/empty-group - Fetching users in group
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups - Fetching all user groups
+2026-02-16 08:57:58 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 08:57:58 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user123/admin - Removing user from group
+2026-02-16 08:57:58 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user123/users - Removing user from group
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Fetching groups for userId: user123
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Fetching users for groupId: admin
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Fetching all user group mappings
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: testUser, groupId: testGroup
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: user123, groupId: admin
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: null, groupId: admin
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: user123, groupId: null
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Deleting user group mapping - userId: user123, groupId: admin
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping deleted successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Fetching groups for userId: orphan-user
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Fetching users for groupId: empty-group
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Fetching all user group mappings
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: user@example.com, groupId: admin-group
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Deleting user group mapping - userId: user123, groupId: admin
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping deleted successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - Deleting user group mapping - userId: user123, groupId: admin
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.UserGroupService - User group mapping deleted successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.FeatureFlagService - Updating feature flag with ID: 1
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.FeatureFlagService - Feature flag updated successfully with ID: 1
+2026-02-16 08:57:58 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag by key: non-existent
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.FeatureFlagService - Deleting feature flag with ID: 999
+2026-02-16 08:57:58 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag with ID: 999
+2026-02-16 08:57:58 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag by key: feature-test
+2026-02-16 08:57:58 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag with ID: 1
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.FeatureFlagService - Creating feature flag with key: feature-test
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.FeatureFlagService - Feature flag created successfully with ID: 1
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.FeatureFlagService - Deleting feature flag with ID: 1
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.FeatureFlagService - Feature flag deleted successfully with ID: 1
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Creating user override for feature ID: 999, user: user123, enabled: true
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Deleting user override for feature ID: 1, user: user123
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Creating group override for feature ID: 1, group: admin, enabled: true
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Group override created successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Deleting user override for feature ID: 1, user: user123
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - User override deleted successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Creating user override for feature ID: 1, user: user123, enabled: true
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Creating user override for feature ID: 1, user: user123, enabled: true
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - User override created successfully
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Deleting group override for feature ID: 1, group: admin
+2026-02-16 08:57:58 [main] INFO  c.f.service.impl.OverrideService - Group override deleted successfully
+2026-02-16 08:57:58 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: feature-test for user: user123
+2026-02-16 08:57:58 [main] DEBUG c.f.s.impl.FeatureEvaluationService - User override found for feature feature-test: false
+2026-02-16 08:57:58 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: feature-test for user: user123
+2026-02-16 08:57:58 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Group override found for feature feature-test, group user123: false
+2026-02-16 08:57:58 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: non-existent for user: user123
+2026-02-16 08:57:58 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: feature-test for user: user123
+2026-02-16 08:57:58 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Using default state for feature feature-test: true
+2026-02-16 08:57:58 [main] ERROR c.f.exception.GlobalExceptionHandler - Unexpected error: Unexpected error
+java.lang.Exception: Unexpected error
+	at com.featureflag.exception.GlobalExceptionHandlerTest.testHandleGeneralException(GlobalExceptionHandlerTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature not found
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Duplicate override: Duplicate override
+2026-02-16 08:57:58 [main] WARN  c.f.exception.GlobalExceptionHandler - Override not found: Override not found
+2026-02-16 08:57:58 [main] ERROR c.f.exception.GlobalExceptionHandler - Unexpected error: Validation failed
+java.lang.Exception: Validation failed
+	at com.featureflag.exception.GlobalExceptionHandlerTest.testHandleValidationException(GlobalExceptionHandlerTest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-02-16 08:58:00 [main] INFO  c.featureflag.FeatureFlagApplication - Starting FeatureFlagApplication v1.0.0 using Java 17.0.16 with PID 74312 (/Users/nag/Desktop/Everest/feature-flag-system/target/feature-flags-1.0.0.jar started by nag in /Users/nag/Desktop/Everest/feature-flag-system)
+2026-02-16 08:58:00 [main] DEBUG c.featureflag.FeatureFlagApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-02-16 08:58:00 [main] INFO  c.featureflag.FeatureFlagApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-16 08:58:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16 08:58:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+2026-02-16 08:58:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-16 08:58:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-16 08:58:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-02-16 08:58:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-16 08:58:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 858 ms
+2026-02-16 08:58:01 [main] INFO  liquibase.changelog - Reading from feature_flags.databasechangelog
+2026-02-16 08:58:01 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-02-16 08:58:01 [main] INFO  liquibase.changelog - Reading from feature_flags.databasechangelog
+2026-02-16 08:58:01 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-02-16 08:58:01 [main] INFO  liquibase.util - Run:                          0
+2026-02-16 08:58:01 [main] INFO  liquibase.util - Previously run:               4
+2026-02-16 08:58:01 [main] INFO  liquibase.util - Filtered out:                 0
+2026-02-16 08:58:01 [main] INFO  liquibase.util - -------------------------------
+2026-02-16 08:58:01 [main] INFO  liquibase.util - Total change sets:            4
+2026-02-16 08:58:01 [main] INFO  liquibase.util - Update summary generated
+2026-02-16 08:58:01 [main] INFO  liquibase.command - Command execution complete
+2026-02-16 08:58:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16 08:58:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2026-02-16 08:58:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-16 08:58:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16 08:58:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-16 08:58:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ae0a26
+2026-02-16 08:58:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-16 08:58:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16 08:58:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-16 08:58:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16 08:58:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16 08:58:02 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-16 08:58:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-16 08:58:02 [main] INFO  c.featureflag.FeatureFlagApplication - Started FeatureFlagApplication in 3.272 seconds (process running for 3.543)
+2026-02-16 08:58:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-16 08:58:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-16 08:58:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-16 08:58:58 [http-nio-8080-exec-1] INFO  c.f.controller.FeatureFlagController - POST /api/v1/flags - Creating feature flag: dark-mode
+2026-02-16 08:58:58 [http-nio-8080-exec-1] INFO  c.f.service.impl.FeatureFlagService - Creating feature flag with key: dark-mode
+2026-02-16 08:58:58 [http-nio-8080-exec-1] INFO  c.f.service.impl.FeatureFlagService - Feature flag created successfully with ID: 7
+2026-02-16 09:03:53 [main] INFO  c.f.c.OverrideControllerTest - Starting OverrideControllerTest using Java 17.0.16 with PID 74754 (started by nag in /Users/nag/Desktop/Everest/feature-flag-system)
+2026-02-16 09:03:53 [main] DEBUG c.f.c.OverrideControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-02-16 09:03:53 [main] INFO  c.f.c.OverrideControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-16 09:03:55 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:55 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:55 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-02-16 09:03:55 [main] INFO  c.f.c.OverrideControllerTest - Started OverrideControllerTest in 2.177 seconds (process running for 3.076)
+2026-02-16 09:03:55 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/groups/999/admin - Deleting group override
+2026-02-16 09:03:55 [main] WARN  c.f.exception.GlobalExceptionHandler - Override not found: Group override not found
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/users - Creating user override
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/groups - Creating group override
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.featureflag.controller.OverrideController.createUserOverride(com.featureflag.dto.CreateUserOverrideRequest): [Field error in object 'createUserOverrideRequest' on field 'userId': rejected value [null]; codes [NotBlank.createUserOverrideRequest.userId,NotBlank.userId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserOverrideRequest.userId,userId]; arguments []; default message [userId]]; default message [User ID is required]] 
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/users/1/alice - Deleting user override
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/users - Creating user override
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Duplicate override: User override already exists for this feature
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/users - Creating user override
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/groups - Creating group override
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.featureflag.controller.OverrideController.createUserOverride(com.featureflag.dto.CreateUserOverrideRequest): [Field error in object 'createUserOverrideRequest' on field 'featureId': rejected value [null]; codes [NotNull.createUserOverrideRequest.featureId,NotNull.featureId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserOverrideRequest.featureId,featureId]; arguments []; default message [featureId]]; default message [Feature ID is required]] 
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - POST /api/v1/overrides/groups - Creating group override
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Duplicate override: Group override already exists for this feature
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/users/999/alice - Deleting user override
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Override not found: User override not found
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.featureflag.controller.OverrideController.createGroupOverride(com.featureflag.dto.CreateGroupOverrideRequest): [Field error in object 'createGroupOverrideRequest' on field 'groupId': rejected value [null]; codes [NotBlank.createGroupOverrideRequest.groupId,NotBlank.groupId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createGroupOverrideRequest.groupId,groupId]; arguments []; default message [groupId]]; default message [Group ID is required]] 
+2026-02-16 09:03:56 [main] INFO  c.f.controller.OverrideController - DELETE /api/v1/overrides/groups/1/admin - Deleting group override
+2026-02-16 09:03:56 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.featureflag.controller.FeatureEvaluationControllerTest]: FeatureEvaluationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-16 09:03:56 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.featureflag.FeatureFlagApplication for test class com.featureflag.controller.FeatureEvaluationControllerTest
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationControllerTest - Starting FeatureEvaluationControllerTest using Java 17.0.16 with PID 74754 (started by nag in /Users/nag/Desktop/Everest/feature-flag-system)
+2026-02-16 09:03:56 [main] DEBUG c.f.c.FeatureEvaluationControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-16 09:03:56 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationControllerTest - Started FeatureEvaluationControllerTest in 0.269 seconds (process running for 3.75)
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/non-existent/alice - Evaluating feature for user
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/premium-feature/charlie - Evaluating feature for user
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/beta-feature/dave - Evaluating feature for user
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/dark-mode/alice - Evaluating feature for user
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/default/non-existent - Getting default state
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureEvaluationController - GET /api/v1/evaluate/default/test-feature - Getting default state
+2026-02-16 09:03:56 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.featureflag.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-16 09:03:56 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.featureflag.FeatureFlagApplication for test class com.featureflag.controller.FeatureFlagControllerTest
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureFlagControllerTest - Starting FeatureFlagControllerTest using Java 17.0.16 with PID 74754 (started by nag in /Users/nag/Desktop/Everest/feature-flag-system)
+2026-02-16 09:03:56 [main] DEBUG c.f.c.FeatureFlagControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureFlagControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-16 09:03:56 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.c.FeatureFlagControllerTest - Started FeatureFlagControllerTest in 0.216 seconds (process running for 4.056)
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - POST /api/v1/flags - Creating feature flag: new-feature
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/999 - Fetching feature flag
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/key/test-feature - Fetching feature flag by key
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - DELETE /api/v1/flags/1 - Deleting feature flag
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/key/non-existent - Fetching feature flag by key
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - DELETE /api/v1/flags/999 - Deleting feature flag
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - GET /api/v1/flags/1 - Fetching feature flag
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - PUT /api/v1/flags/999 - Updating feature flag
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature flag not found
+2026-02-16 09:03:56 [main] INFO  c.f.controller.FeatureFlagController - PUT /api/v1/flags/1 - Updating feature flag
+2026-02-16 09:03:56 [main] WARN  c.f.exception.GlobalExceptionHandler - Validation error: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.featureflag.dto.FeatureFlagDTO> com.featureflag.controller.FeatureFlagController.createFlag(com.featureflag.dto.CreateFeatureFlagRequest): [Field error in object 'createFeatureFlagRequest' on field 'featureKey': rejected value [null]; codes [NotBlank.createFeatureFlagRequest.featureKey,NotBlank.featureKey,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createFeatureFlagRequest.featureKey,featureKey]; arguments []; default message [featureKey]]; default message [Feature key is required]] 
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-02-16 09:03:56 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.featureflag.dto.UserGroupDTO> com.featureflag.controller.UserGroupController.createUserGroup(com.featureflag.dto.CreateUserGroupRequest): [Field error in object 'createUserGroupRequest' on field 'groupId': rejected value [null]; codes [NotBlank.createUserGroupRequest.groupId,NotBlank.groupId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserGroupRequest.groupId,groupId]; arguments []; default message [groupId]]; default message [Group ID is required]] ]
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/user123 - Fetching groups for user
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/group/admin - Fetching users in group
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user-not-found/admin - Removing user from group
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups - Fetching all user groups
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - POST /api/v1/user-groups - Creating user group: userId=user123, groupId=admin
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - POST /api/v1/user-groups - Creating user group: userId=user1, groupId=admin
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - POST /api/v1/user-groups - Creating user group: userId=user2, groupId=users
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/user123 - Fetching groups for user
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.featureflag.dto.UserGroupDTO> com.featureflag.controller.UserGroupController.createUserGroup(com.featureflag.dto.CreateUserGroupRequest): [Field error in object 'createUserGroupRequest' on field 'userId': rejected value [null]; codes [NotBlank.createUserGroupRequest.userId,NotBlank.userId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserGroupRequest.userId,userId]; arguments []; default message [userId]]; default message [User ID is required]] ]
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/user@example.com - Fetching groups for user
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user123/admin - Removing user from group
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/user/orphan-user - Fetching groups for user
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups/group/empty-group - Fetching users in group
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - GET /api/v1/user-groups - Fetching all user groups
+2026-02-16 09:03:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-16 09:03:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user123/admin - Removing user from group
+2026-02-16 09:03:56 [main] INFO  c.f.controller.UserGroupController - DELETE /api/v1/user-groups/user123/users - Removing user from group
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Fetching groups for userId: user123
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Fetching users for groupId: admin
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Fetching all user group mappings
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: testUser, groupId: testGroup
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: user123, groupId: admin
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: null, groupId: admin
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: user123, groupId: null
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Deleting user group mapping - userId: user123, groupId: admin
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping deleted successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Fetching groups for userId: orphan-user
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Fetching users for groupId: empty-group
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Fetching all user group mappings
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Creating user group mapping - userId: user@example.com, groupId: admin-group
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping created successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Deleting user group mapping - userId: user123, groupId: admin
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping deleted successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - Deleting user group mapping - userId: user123, groupId: admin
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.UserGroupService - User group mapping deleted successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.FeatureFlagService - Updating feature flag with ID: 1
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.FeatureFlagService - Feature flag updated successfully with ID: 1
+2026-02-16 09:03:57 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag by key: non-existent
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.FeatureFlagService - Deleting feature flag with ID: 999
+2026-02-16 09:03:57 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag with ID: 999
+2026-02-16 09:03:57 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag by key: feature-test
+2026-02-16 09:03:57 [main] DEBUG c.f.service.impl.FeatureFlagService - Getting feature flag with ID: 1
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.FeatureFlagService - Creating feature flag with key: feature-test
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.FeatureFlagService - Feature flag created successfully with ID: 1
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.FeatureFlagService - Deleting feature flag with ID: 1
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.FeatureFlagService - Feature flag deleted successfully with ID: 1
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Creating user override for feature ID: 999, user: user123, enabled: true
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Deleting user override for feature ID: 1, user: user123
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Creating group override for feature ID: 1, group: admin, enabled: true
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Group override created successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Deleting user override for feature ID: 1, user: user123
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - User override deleted successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Creating user override for feature ID: 1, user: user123, enabled: true
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Creating user override for feature ID: 1, user: user123, enabled: true
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - User override created successfully
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Deleting group override for feature ID: 1, group: admin
+2026-02-16 09:03:57 [main] INFO  c.f.service.impl.OverrideService - Group override deleted successfully
+2026-02-16 09:03:57 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: feature-test for user: user123
+2026-02-16 09:03:57 [main] DEBUG c.f.s.impl.FeatureEvaluationService - User override found for feature feature-test: false
+2026-02-16 09:03:57 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: feature-test for user: user123
+2026-02-16 09:03:57 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Group override found for feature feature-test, group user123: false
+2026-02-16 09:03:57 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: non-existent for user: user123
+2026-02-16 09:03:57 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Evaluating feature: feature-test for user: user123
+2026-02-16 09:03:57 [main] DEBUG c.f.s.impl.FeatureEvaluationService - Using default state for feature feature-test: true
+2026-02-16 09:03:57 [main] ERROR c.f.exception.GlobalExceptionHandler - Unexpected error: Unexpected error
+java.lang.Exception: Unexpected error
+	at com.featureflag.exception.GlobalExceptionHandlerTest.testHandleGeneralException(GlobalExceptionHandlerTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-02-16 09:03:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Feature flag not found: Feature not found
+2026-02-16 09:03:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Duplicate override: Duplicate override
+2026-02-16 09:03:57 [main] WARN  c.f.exception.GlobalExceptionHandler - Override not found: Override not found
+2026-02-16 09:03:57 [main] ERROR c.f.exception.GlobalExceptionHandler - Unexpected error: Validation failed
+java.lang.Exception: Validation failed
+	at com.featureflag.exception.GlobalExceptionHandlerTest.testHandleValidationException(GlobalExceptionHandlerTest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-02-16 10:01:53 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-16 10:01:53 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-16 10:01:53 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16 10:01:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-16 10:01:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
